@@ -71,6 +71,7 @@ on property:ro.crypto.state=encrypted && property:ro.boot.dynamic_partitions=tru
     start vendor.prepdecrypt
 
 on property:twrp.variant.files_copied=1
+    start vendor.vibratorfeature-service
     start vendor.touch_report
     start vendor.weaver-service
     start vendor.keymint-strongbox
