@@ -1,4 +1,4 @@
-# TWRP device tree for Xiaomi SM8750
+# TWRP device tree for Lenovo Legion Y700 Gen 4
 
 ## Features
 

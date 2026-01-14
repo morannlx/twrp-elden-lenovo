@@ -4,5 +4,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_sm8750_thales.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/twrp_elden.mk
