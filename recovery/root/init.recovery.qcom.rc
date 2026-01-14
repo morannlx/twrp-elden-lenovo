@@ -64,13 +64,13 @@ on property:twrp.modules.loaded=true
     write /sys/kernel/boot_adsp/ssr 1
     wait /sys/class/power_supply/battery
     start vendor.health-default
-    umount /vendor
-    umount /firmware
 
 on property:ro.crypto.state=encrypted && property:ro.boot.dynamic_partitions=true
     start vendor.prepdecrypt
 
-on property:twrp.variant.files_copied=1
+on property:vendor.sys.listeners.registered=true
+    umount /vendor
+    umount /firmware
     start vendor.touch_report
     start vendor.weaver-service
     start vendor.keymint-strongbox
