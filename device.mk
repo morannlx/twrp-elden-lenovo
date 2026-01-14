@@ -38,10 +38,6 @@ PRODUCT_ENABLE_UFFD_GC                          := true
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(DEVICE_PATH)/security/releasekey
 
-# Required modules
-TWRP_REQUIRED_MODULES += \
-    prebuilt
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
